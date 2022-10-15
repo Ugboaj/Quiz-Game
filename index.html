@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const questions =  [
+            {
+                prompt: "what is the color of apple?  (a)Red/green (b)blue",
+                answer: "a"
+            },
+            {
+                prompt: "what is the color of the sun? (a)Blue (b)Black (c)Yellow",
+                answer: "c"
+            },
+
+            {
+                prompt: "who is the richest man on earth? (a)Bill Gate (b)Elon musk (c)Me",
+                answer: "b"
+            },
+            {
+                prompt: "who is th? (a)Bill Gate (b)Elon musk (c)Me",
+                answer: "b"
+            },
+            {
+                prompt: "who is the richest man on earth? (a)Bill Gate (b)Elon musk (c)Me",
+                answer: "b"
+            },
+            {
+                prompt: "who is the richest man on earth? (a)Bill Gate (b)Elon musk (c)Me",
+                answer: "b"
+            },
+
+        ]
+        var score = 0;
+        
+        var random = Math.floor(Math.random(questions.length) * 20) +1;
+
+        // function getRandomNumber(min, max) {
+        //     let step1 = max - min * 1;
+        //     let step2 = Math.random() * step1;
+        //     let result = Math.floor(step2) + min;
+
+        //     return result
+        // }
+
+        // let index = getRandomNumber(0, )
+
+        for (var i = 0; i < questions.length; i++) {
+            var response = prompt(questions[i].prompt);
+            if (response === questions[i].answer) {
+                score = score +2;
+                alert(`Correct! You have 2 points, score : ${score} points`);
+            } else {
+                alert("Wrong!")
+            }
+           
+        }
+
+    </script>
+</body>
+
+</html>
